@@ -33,8 +33,8 @@
         <p class="feed-program__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <div class="feed-program_wrapper">
-        <form class="cat-feed" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="cat-data">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="form__item cat-data">
             <ul class="cat-data__list">
               <li class="cat-data__item">
                 <label class="cat-data__description" for="cat-name">Имя:*</label>
@@ -52,7 +52,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="end-result">
+          <fieldset class="form__item end-result">
             <ul class="end-result__list">
               <li class="end-result__item">
                 <input class="end-result__information" type="radio" name="end-result" value="weight-loss"
@@ -71,7 +71,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="user-contacts">
+          <fieldset class="form__item user-contacts">
             <legend class="user-contacts__title">Контактные данные (владельца кота)</legend>
             <ul class="user-contacts__list">
               <li class="user-contacts__item">
@@ -86,13 +86,13 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="comments">
+          <fieldset class="form__item comments">
             <legend class="comments__title">Комментарий</legend>
             <label class="visually-hidden" for="comment-field">Повадки кота</label>
             <textarea class="comments__information" name="comment"
                       id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset class="extra">
+          <fieldset class="form__item extra">
             <legend class="extra__title">Дополнительно</legend>
             <ul class="extra__list">
               <li class="extra__item">
