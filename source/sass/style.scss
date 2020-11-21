@@ -1,18 +1,24 @@
+@import "mixins";
+
+//global
 @import "colors";
 @import "global";
 @import "fonts";
+@import "blocks/title";
 
 //header
-@import "navigation";
+@import "blocks/main-nav";
 
 //main
-@import "promo";
-@import "button";
-@import "recommendations";
-@import "advantages";
-@import "result";
-@import "success";
-@import "range";
-@import "address";
-@import "footer";
-@import "social";
+@import "blocks/promo";
+@import "blocks/button";
+@import "blocks/recommendations";
+@import "blocks/advantages";
+@import "blocks/result";
+@import "blocks/success";
+@import "blocks/range";
+@import "blocks/address";
+
+//footer
+@import "blocks/footer";
+@import "blocks/social";
