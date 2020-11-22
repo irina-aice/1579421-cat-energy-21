@@ -1,4 +1,5 @@
 @import "mixins";
+@import "variables";
 
 //global
 @import "colors";
@@ -18,6 +19,10 @@
 @import "blocks/success";
 @import "blocks/range";
 @import "blocks/address";
+
+//form
+@import "blocks/feed-program";
+@import "blocks/form";
 
 //footer
 @import "blocks/footer";
