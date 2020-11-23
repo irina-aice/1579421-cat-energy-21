@@ -1,0 +1,16 @@
+.product-item__title {
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product-item__link {
+  text-decoration: none;
+  color: $darker-grey;
+}
+
+.product-item__text {
+  font-size: 12px;
+  line-height: 16px;
+}
