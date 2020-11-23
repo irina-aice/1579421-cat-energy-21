@@ -4,4 +4,9 @@
   text-transform: uppercase;
   color: $white;
   background-color: $green;
+
+  &--all {
+    color: $dark-grey;
+    background-color: $light-grey;
+  }
 }
