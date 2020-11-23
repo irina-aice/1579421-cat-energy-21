@@ -1,0 +1,40 @@
+.form__fieldset {
+  margin: 0;
+  padding: 0 0 22px 0;
+  border: 0;
+
+  &--bottom-border {
+    border-bottom: 1px solid $grey;
+  }
+}
+
+.form__item {
+  margin-top: 13px;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__description {
+  font-family: $font-oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__information {
+  font-family: $font-oswald;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.form__information::placeholder {
+  color: $dark-grey;
+}
+
+.form__title {
+  font-family: $font-oswald;
+  font-size: 24px;
+  line-height: 26px;
+  color: $black;
+}
