@@ -1,3 +1,10 @@
 .footer {
   background-color: $light-grey;
 }
+
+@media (min-width: $width-tablet) {
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}

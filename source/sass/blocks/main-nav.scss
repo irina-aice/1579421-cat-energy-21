@@ -7,8 +7,33 @@
   color: $black;
 }
 
+@media (min-width: $width-tablet) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
 .main-nav__list {
   @include reset-list;
+}
+
+@media (min-width: $width-tablet) {
+  .main-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-nav__item {
+    //width: 33.3%;
+  }
 }
 
 .main-nav__link {

@@ -1,5 +1,17 @@
 .result {
+  margin: 20px;
   background-color: $lighter-grey;
+}
+
+@media (min-width: $width-desktop) {
+  .result {
+    display: flex;
+  }
+
+  .result__wrapper-range,
+  .result__wrapper-success {
+    width: 50%;
+  }
 }
 
 .result__title {

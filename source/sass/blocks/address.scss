@@ -1,8 +1,15 @@
+.address__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 20px;
+}
+
 .address__wrapper--form {
   background-color: $light-grey;
 }
 
 .address__title {
+  margin: 0;
   padding: 0;
   font-size: 16px;
   text-transform: uppercase;

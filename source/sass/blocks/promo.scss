@@ -4,6 +4,13 @@
   background-color: $green;
 }
 
+@media (min-width: $width-tablet) {
+  .promo {
+    color: $black;
+    background-color: transparent;
+  }
+}
+
 .promo__title {
   font-size: 36px;
   line-height: 36px;

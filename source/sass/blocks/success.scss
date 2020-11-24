@@ -1,3 +1,8 @@
+.success__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .success__list {
   font-size: 12px;
   line-height: 12px;
@@ -17,4 +22,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $black;
+}
+
+@media (min-width: $width-tablet) {
+  .success {
+    display: flex;
+    justify-content: space-between;
+  }
 }
