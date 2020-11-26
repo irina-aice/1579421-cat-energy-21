@@ -1,0 +1,13 @@
+.header__inner {
+  @include container;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $width-tablet) {
+  .header__inner {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}

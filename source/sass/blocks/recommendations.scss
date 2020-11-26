@@ -1,10 +1,28 @@
+.recommendations {
+  @include container;
+}
+
 .recommendations__list {
   @include reset-list;
+}
+
+@media (min-width: $width-desktop) {
+  .recommendations__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .recommendations__item {
   margin-top: 20px;
   background-color: $light-grey;
+}
+
+@media (min-width: $width-desktop) {
+  .recommendations__item {
+    width: 44%;
+  }
 }
 
 .recommendations__title {

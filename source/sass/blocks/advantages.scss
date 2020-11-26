@@ -1,3 +1,7 @@
+.advantages {
+  @include container;
+}
+
 .advantages__title {
   margin: 0;
   font-size: 36px;
@@ -6,6 +10,21 @@
 
 .advantages__list {
   @include reset-list;
+}
+
+@media (min-width: $width-tablet) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .advantages__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+  }
 }
 
 .advantages__item {

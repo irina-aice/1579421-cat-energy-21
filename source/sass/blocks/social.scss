@@ -1,4 +1,10 @@
 .social {
   @include reset-list;
   display: flex;
+  flex-wrap: wrap;
+}
+
+.social__link svg {
+  width: 10px;
+  height: 10px;
 }
