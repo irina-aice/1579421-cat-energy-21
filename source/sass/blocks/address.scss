@@ -1,7 +1,13 @@
+.address {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .address__wrapper {
+  @include container;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 20px;
 }
 
 .address__wrapper--form {
