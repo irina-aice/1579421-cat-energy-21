@@ -1,3 +1,7 @@
+.feed-program {
+  @include container;
+}
+
 .feed-program__title {
   font-size: 36px;
   line-height: 1;
@@ -7,6 +11,23 @@
   font-family: $font-oswald;
   text-transform: uppercase;
   color: $black;
+}
+
+@media (min-width: $width-tablet) {
+  .feed-program__description,
+  .feed-program__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+}
+
+@media (min-width: $width-desktop) {
+  .feed-program__description,
+  .feed-program__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .feed-program__small-text {
