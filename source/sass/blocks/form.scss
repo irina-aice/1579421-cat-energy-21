@@ -1,10 +1,33 @@
 .form__fieldset {
-  margin: 0;
-  padding: 0 0 22px 0;
+  margin: 22px 0 0 0;
+  padding: 0;
   border: 0;
 
   &--bottom-border {
     border-bottom: 1px solid $grey;
+  }
+
+  &--pet-data {
+    padding-bottom: 27px;
+  }
+
+  &--end-result {
+    padding-bottom: 20px;
+  }
+
+  &--user-data {
+    margin-top: 4px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .form__fieldset--bottom-border {
+    border-bottom: 0;
+  }
+
+  .form__fieldset--bottom-border:last-child {
+    border: 1px solid $grey;
+    box-sizing: border-box;
   }
 }
 
@@ -32,6 +55,7 @@
   grid-column-gap: 10px;
   margin-top: 13px;
 }
+
 
 @media (min-width: $width-desktop) {
   .form__wrapper-pet-data,
@@ -63,8 +87,15 @@
 }
 
 .form__title {
+  padding-top: 23px;
+  padding-bottom: 35px;
   font-size: 24px;
   line-height: 26px;
+}
+
+.form__button-inner {
+  padding-top: 34px;
+  padding-bottom: 32px;
 }
 
 @media (min-width: $width-tablet) {
