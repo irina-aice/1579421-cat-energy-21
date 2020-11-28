@@ -1,8 +1,16 @@
 .present {
   height: 289px;
+  margin-top: 39px;
+  margin-bottom: 35px;
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (min-width: $width-desktop) {
+  .present {
+    margin-top: 0;
+  }
 }
 
 .present__description {
