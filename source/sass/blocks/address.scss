@@ -1,17 +1,22 @@
 .address {
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
+}
+
+.address--index {
+  max-width: 1440px;
+}
+
+.address--color {
+  background-color: $light-grey;
 }
 
 .address__wrapper {
   @include container;
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.address__wrapper--form {
-  background-color: $light-grey;
+  padding-top: 33px;
+  padding-bottom: 16px;
 }
 
 .address__title {

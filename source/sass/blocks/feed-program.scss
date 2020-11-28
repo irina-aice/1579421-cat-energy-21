@@ -1,15 +1,51 @@
+.feed-program {
+  @include container;
+}
+
+.feed-program__container {
+  padding-top: 27px;
+  padding-bottom: 4px;
+}
+
+@media (min-width: $width-tablet) {
+  .feed-program__container {
+    padding-top: 64px;
+    padding-bottom: 66px;
+  }
+}
+
 .feed-program__title {
+  margin: 0;
   font-size: 36px;
   line-height: 1;
 }
 
 .feed-program__description {
+  margin: 37px 0 0 0;
   font-family: $font-oswald;
   text-transform: uppercase;
   color: $black;
 }
 
+@media (min-width: $width-tablet) {
+  .feed-program__description,
+  .feed-program__wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .feed-program__description,
+  .feed-program__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .feed-program__small-text {
+  text-align: center;
+  margin: 21px 0 0 0;
   line-height: 16px;
   color: $black;
 }
