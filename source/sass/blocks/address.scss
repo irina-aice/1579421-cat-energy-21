@@ -9,20 +9,20 @@
   &--color {
     background-color: $light-grey;
   }
+}
 
-  &__wrapper {
-    @include container;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 33px;
-    padding-bottom: 16px;
-  }
+.address__wrapper {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 33px;
+  padding-bottom: 16px;
+}
 
-  &__title {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: $light-black;
-  }
+.address__title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $light-black;
 }
