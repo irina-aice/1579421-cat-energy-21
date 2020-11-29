@@ -27,13 +27,6 @@
   line-height: 16px;
 }
 
-@media (min-width: $width-tablet) {
-  .product-item__wrapper--accessory {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
 @media (min-width: $width-desktop) {
   .product-item__container--accessory {
     display: grid;
@@ -75,5 +68,12 @@
   .product-item--accessory {
     border-left: 0;
     border-right: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .product-item__wrapper--accessory {
+    display: flex;
+    justify-content: space-between;
   }
 }
