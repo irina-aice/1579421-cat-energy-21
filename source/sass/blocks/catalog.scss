@@ -1,14 +1,14 @@
 .catalog {
   @include container;
+}
 
-  &__title {
-    font-size: 24px;
-    line-height: 1;
-  }
+.catalog__title {
+  font-size: 24px;
+  line-height: 1;
+}
 
-  &__list {
-    @include reset-list;
-  }
+.catalog__list {
+  @include reset-list;
 }
 
 @media (min-width: $width-tablet) {

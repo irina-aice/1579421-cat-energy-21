@@ -7,12 +7,12 @@
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  &__description {
-    font-size: 16px;
-    line-height: 20px;
-    color: $white;
-  }
+.present__description {
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
 }
 
 @media (min-width: $width-desktop) {
