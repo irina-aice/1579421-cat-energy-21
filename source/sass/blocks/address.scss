@@ -1,14 +1,14 @@
 .address {
   width: 100%;
   margin: 0 auto;
-}
 
-.address--index {
-  max-width: 1440px;
-}
+  &--index {
+    max-width: 1440px;
+  }
 
-.address--color {
-  background-color: $light-grey;
+  &--color {
+    background-color: $light-grey;
+  }
 }
 
 .address__wrapper {

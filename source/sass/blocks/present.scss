@@ -1,5 +1,9 @@
 .present {
-  height: 289px;
+  height: auto;
+  margin-top: 39px;
+  margin-bottom: 35px;
+  padding-top: 186px;
+  padding-bottom: 43px;
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -9,4 +13,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $white;
+}
+
+@media (min-width: $width-desktop) {
+  .present {
+    margin-top: 0;
+  }
 }

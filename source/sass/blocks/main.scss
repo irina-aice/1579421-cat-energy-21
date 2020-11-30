@@ -1,5 +1,14 @@
 .main__title {
   @include container;
+  margin-top: 27px;
+  margin-bottom: 41px;
   font-size: 36px;
   line-height: 1;
+}
+
+@media (min-width: $width-tablet) {
+  .main__title {
+    margin-top: 65px;
+    margin-bottom: 83px;
+  }
 }
