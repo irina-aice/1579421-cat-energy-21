@@ -1,4 +1,6 @@
 .main-nav {
+  width: auto;
+  min-height: 66px;
   font-family: $font-oswald;
   font-weight: 500;
   font-size: 20px;
@@ -11,9 +13,35 @@
   .main-nav {
     display: flex;
     flex-wrap: wrap;
-    width: 600px;
+    width: 62%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
+}
 
+@media (min-width: $width-desktop) {
+  .main-nav {
+    max-width: 478px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 66px;
+  height: 66px;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  border: 0;
+}
+
+@media (min-width: $width-tablet) {
   .main-nav__toggle {
     display: none;
   }
@@ -30,13 +58,87 @@
     justify-content: space-between;
     width: 100%;
   }
-
-  .main-nav__item {
-    //width: 33.3%;
-  }
 }
 
 .main-nav__link {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 24px;
   text-decoration: none;
   color: $black;
+  border-top: 1px solid $palest-grey;
+  box-sizing: border-box;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .main-nav__link {
+    padding-top: 42px;
+    padding-bottom: 7px;
+    border-top: 0;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-nav__link {
+    padding-top: 69px;
+    color: $white;
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 24px;
+  height: 1.5px;
+  background-color: $black;
+  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 0;
+  right: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: 23px;
+    width: 24.76px;
+    height: 1.5px;
+    background-color: $black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .main-nav__item--active {
+    border-bottom: 2px solid $green;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .main-nav__item--active {
+    border-bottom-color: $white;
+  }
 }
