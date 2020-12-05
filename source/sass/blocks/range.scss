@@ -57,6 +57,14 @@
     line-height: 29.64px;
     border-bottom: 1px dotted $lighter-black;
     box-sizing: border-box;
+
+    &:hover {
+      border-bottom: 1px solid $pale-black;
+    }
+
+    &:active {
+      border-bottom: 0;
+    }
   }
 }
 
@@ -97,21 +105,23 @@
 @media (min-width: $width-tablet) {
   .range__scale {
     position: absolute;
+    width: 34px;
+    height: 34px;
     left: 50%;
-    //transform: translate(50%, -40%);
     transform: translateY(-40%);
-    width: 8px;
-    height: 8px;
+    border: 1px solid $paler-grey;
     border-radius: 50%;
-    border: 13px solid $white;
+    box-sizing: border-box;
     box-shadow: 0 1px 3px $lightest-black;
-    background-color: $green;
+
+    &:active {
+      border-color: $green;
+    }
   }
 }
 
 .range__control {
   position: absolute;
-  //margin-top: 3px;
   top: 50%;
   transform: translateY(-50%);
   width: 45%;
@@ -123,6 +133,12 @@
 
 @media (min-width: $width-tablet) {
   .range__control {
-    width: 0;
+    position: absolute;
+    transform: translate(-17%, -48%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 11px solid $white;
+    background-color: $green;
   }
 }
