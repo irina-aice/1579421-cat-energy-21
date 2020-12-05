@@ -1,6 +1,9 @@
 .button {
   display: block;
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  text-align: center;
   text-decoration: none;
   font-family: $font-oswald;
   text-transform: uppercase;
@@ -10,5 +13,23 @@
   &--all {
     color: $dark-grey;
     background-color: $light-grey;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .button {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .button--promo {
+    width: auto;
+    display: inline-block;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 20px;
+    line-height: 1;
   }
 }

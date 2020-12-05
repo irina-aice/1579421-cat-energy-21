@@ -2,40 +2,142 @@
   @include container;
 }
 
+@media (min-width: $width-desktop) {
+  .recommendations {
+    padding-top: 82px;
+  }
+}
+
 .recommendations__list {
   @include reset-list;
 }
 
 @media (min-width: $width-desktop) {
   .recommendations__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
   }
 }
 
 .recommendations__item {
   margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 33px;
   background-color: $light-grey;
+}
+
+@media (min-width: $width-tablet) {
+  .recommendations__item {
+    margin-top: 30px;
+    padding-left: 52px;
+  }
 }
 
 @media (min-width: $width-desktop) {
   .recommendations__item {
-    width: 44%;
+    margin-top: 0;
   }
 }
 
 .recommendations__title {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  text-align: center;
+  color: $black;
+}
+
+@media (min-width: $width-tablet) {
+  .recommendations__title {
+    padding-top: 77px;
+    padding-bottom: 24px;
+    text-align: left;
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .recommendations__title {
+    text-align: center;
+    padding-bottom: 73px;
+  }
+}
+
+.recommendations__description {
+  margin: 0;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $grey;
+}
+
+@media (min-width: $width-tablet) {
+  .recommendations__description {
+    padding-bottom: 48px;
+    border-bottom: 0;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .recommendations__description {
+    padding-bottom: 26px;
+  }
+}
+
+.recommendations__description br {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .recommendations__description br {
+    display: inline-block;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .recommendations__description br {
+    display: none;
+  }
 }
 
 .recommendations__link {
+  display: inline-block;
+  padding-top: 18px;
+  padding-bottom: 18px;
   font-family: $font-oswald;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
   color: $black;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .recommendations__link {
+    padding-top: 0;
+    padding-bottom: 55px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .recommendations__link {
+    padding-bottom: 65px;
+  }
+}
+
+.recommendations__link-icon {
+  width: 10px;
+  height: 10px;
 }

@@ -1,13 +1,45 @@
 .header__inner {
-  @include container;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 @media (min-width: $width-tablet) {
   .header__inner {
+    @include container;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .header {
+    position: relative;
+    width: 100%;
+    z-index: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+      width: 50%;
+      height: 694px;
+      background-color: $light-green;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -2;
+      width: 720px;
+      height: 694px;
+      background-image: url("../img/cat-index-background-desktop.jpg");
+      background-repeat: no-repeat;
+    }
   }
 }
