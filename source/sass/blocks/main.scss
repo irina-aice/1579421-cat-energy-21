@@ -4,11 +4,21 @@
   margin-bottom: 41px;
   font-size: 36px;
   line-height: 1;
+  color: $black;
 }
 
 @media (min-width: $width-tablet) {
   .main__title {
     margin-top: 65px;
+    margin-bottom: 83px;
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .main__title {
+    margin-top: 80px;
     margin-bottom: 83px;
   }
 }

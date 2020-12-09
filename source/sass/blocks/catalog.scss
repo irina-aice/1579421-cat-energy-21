@@ -1,21 +1,109 @@
-.catalog {
-  @include container;
-}
-
 .catalog__title {
+  @include container;
   font-size: 24px;
   line-height: 1;
 }
 
-.catalog__list {
-  @include reset-list;
+@media (min-width: $width-tablet) {
+  .catalog__title {
+    padding-left: 67px;
+    padding-right: 50px;
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog__title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.catalog__title-item {
+  position: relative;
+  display: inline-block;
+  background-color: $white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20px;
+    background-color: $white;
+  }
+
+  &::after {
+    left: 100%;
+  }
+
+  &::before {
+    right: 100%;
+  }
 }
 
 @media (min-width: $width-tablet) {
-  .catalog__list--basic {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 60px;
+  .catalog__title-item::before,
+  .catalog__title-item::after {
+    width: 37px;
+  }
+}
+
+.catalog__title-wrapper {
+  position: relative;
+  margin-top: 25px;
+  margin-bottom: 35px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: -1;
+    height: 2px;
+    width: 100%;
+    background-color: $green;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .catalog__title-wrapper {
+    margin-top: 68px;
+    margin-bottom: 80px;
+
+    &::after {
+      top: 22px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .catalog__title-wrapper {
+    margin-top: 75px;
+    margin-bottom: 80px;
+  }
+}
+
+.catalog__list {
+  @include reset-list;
+
+  &--accessory {
+    @include container;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .catalog__list {
+    @include container;
+
+    &--basic {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 60px;
+      grid-row-gap: 59px;
+    }
   }
 }
 
@@ -23,12 +111,15 @@
   .catalog__list--basic {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 80px;
+    grid-row-gap: 62px;
   }
 }
 
 @media (min-width: $width-desktop) {
   .catalog__inner-accessory {
-    display: flex;
-    justify-content: space-between;
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    grid-column-gap: 81px;
   }
 }

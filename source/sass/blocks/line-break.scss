@@ -1,0 +1,17 @@
+.line-break--mobile {
+  display: block;
+}
+
+.line-break--tablet {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .line-break--mobile {
+    display: none;
+  }
+
+  .line-break--tablet {
+    display: block;
+  }
+}
