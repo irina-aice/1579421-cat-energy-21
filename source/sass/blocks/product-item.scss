@@ -20,8 +20,8 @@
 
 @media (min-width: $width-tablet) {
   .product-item {
-    position: relative;
-    padding-top: 82px;
+    //position: relative;
+    //padding-top: 82px;
     border-top: 0;
 
     &--all {
@@ -103,21 +103,23 @@
 
 @media (min-width: $width-tablet) {
   .product-item__link--image {
-    position: absolute;
-    top: 0;
-    left: 0;
     display: block;
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .product-item__link--all br {
-    display: block;
+    display: inline-block;
   }
 
   .product-item__image {
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    &--small {
+      padding-bottom: 7px;
+    }
   }
 }
 
@@ -179,7 +181,7 @@
 
 @media (min-width: $width-tablet) {
   .product-item__text br {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -195,10 +197,10 @@
 
 @media (min-width: $width-tablet) {
   .product-item__container {
-    padding: 161px 37px 39px 37px;
+    padding: 0 37px 39px 37px;
 
     &--basic {
-      background-color: $light-grey;
+      background: linear-gradient(to bottom, $white 0 73px, $light-grey 73px 100%);
     }
 
     &--all {
@@ -228,6 +230,10 @@
 }
 
 @media (min-width: $width-tablet) {
+  .product-item__inner--basic {
+    margin-top: 26px;
+  }
+
   .product-item__inner--accessory {
     display: grid;
     grid-template-columns: 1fr 2fr;
