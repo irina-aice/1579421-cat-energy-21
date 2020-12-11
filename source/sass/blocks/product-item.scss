@@ -247,3 +247,21 @@
     grid-column-gap: 36px;
   }
 }
+
+.product-item__line-break-mobile {
+  display: block;
+}
+
+.product-item__line-break-tablet {
+  display: none;
+}
+
+@media (min-width: $width-tablet) {
+  .product-item__line-break-mobile {
+    display: none;
+  }
+
+  .product-item__line-break-tablet {
+    display: block;
+  }
+}
