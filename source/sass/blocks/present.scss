@@ -1,4 +1,8 @@
 .present {
+  @include container;
+}
+
+.present__inner {
   height: auto;
   margin-top: 39px;
   margin-bottom: 35px;
@@ -9,14 +13,28 @@
   background-size: cover;
 }
 
-.present__description {
-  font-size: 16px;
-  line-height: 20px;
-  color: $white;
+@media (min-width: $width-tablet) {
+  .present__inner {
+    margin-top: 68px;
+    margin-bottom: 77px;
+    padding-top: 72px;
+    padding-bottom: 68px;
+  }
 }
 
 @media (min-width: $width-desktop) {
-  .present {
+  .present__inner {
     margin-top: 0;
+    margin-bottom: 86px;
+    padding-top: 187px;
+    padding-bottom: 41px;
   }
+}
+
+.present__description {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
 }
