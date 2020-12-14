@@ -17,7 +17,7 @@
   @include container;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 24px;
 }
 
@@ -34,6 +34,7 @@
 @media (min-width: $width-desktop) {
   .address__wrapper {
     position: absolute;
+    z-index: 1;
     top: 95px;
     left: 110px;
     width: 570px;
@@ -89,11 +90,34 @@
   }
 }
 
-@media (min-width: $width-desktop) {
+.address__map {
+  height: 362px;
+  background-image: url("../img/map-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $width-tablet) {
   .address__map {
     height: 400px;
-    background-image: url("../img/map.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .address__map {
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+    }
   }
 }
