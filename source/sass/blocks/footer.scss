@@ -10,5 +10,17 @@
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+
+  .footer__item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .footer__wrapper {
+    padding-top: 35px;
   }
 }

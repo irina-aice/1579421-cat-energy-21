@@ -40,6 +40,10 @@
       height: 694px;
       background-image: url("../img/cat-index-background-desktop.jpg");
       background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/cat-index-background-desktop@2x.jpg");
+      }
     }
   }
 }

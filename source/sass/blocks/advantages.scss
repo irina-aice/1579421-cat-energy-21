@@ -4,6 +4,7 @@
 
 @media (min-width: $width-tablet) {
   .advantages {
+    padding-bottom: 55px;
     border-bottom: 1px solid $palest-grey;
     box-sizing: border-box;
   }
@@ -11,6 +12,7 @@
 
 @media (min-width: $width-desktop) {
   .advantages {
+    padding-bottom: 24px;
     border-bottom: 0;
   }
 }
@@ -27,7 +29,7 @@
 @media (min-width: $width-tablet) {
   .advantages__title {
     padding-top: 45px;
-    padding-bottom: 35px;
+    padding-bottom: 72px;
     font-size: 60px;
     line-height: 1;
   }
@@ -35,7 +37,8 @@
 
 @media (min-width: $width-desktop) {
   .advantages__title {
-    padding-bottom: 75px;
+    padding-top: 71px;
+    padding-bottom: 72px;
   }
 }
 
@@ -47,8 +50,8 @@
   .advantages__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 137px;
-    grid-row-gap: 90px;
+    grid-column-gap: 58px;
+    grid-row-gap: 109px;
   }
 }
 
@@ -60,20 +63,141 @@
 }
 
 .advantages__item {
+  position: relative;
+  padding-top: 3px;
   padding-left: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   &:last-child {
-    margin-bottom: 42px;
+    margin-bottom: 47px;
   }
+
+  &--healthy-food::before,
+  &--product-form::before,
+  &--food-exchange::before,
+  &--pet-changing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+  }
+
+  &--healthy-food::before {
+    background-image: url("../img/index-icon-healthy-food.svg");
+  }
+
+  &--product-form::before {
+    background-image: url("../img/index-icon-product-form.svg");
+  }
+
+  &--food-exchange::before {
+    background-image: url("../img/index-icon-food-exchange.svg");
+  }
+
+  &--pet-changing::before {
+    background-image: url("../img/index-icon-pet-changing.svg");
+  }
+}
+
+.advantages__item br {
+  display: none;
 }
 
 @media (min-width: $width-tablet) {
   .advantages__item {
-    margin-top: 111px;
+    padding-top: 112px;
     padding-left: 0;
     padding-right: 35px;
     font-size: 16px;
     line-height: 24px;
+
+    &--healthy-food::before,
+    &--product-form::before,
+    &--food-exchange::before,
+    &--pet-changing::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &--healthy-food::before {
+      background-image: url("../img/index-icon-healthy-food-tablet.svg");
+    }
+
+    &--product-form::before {
+      background-image: url("../img/index-icon-product-form-tablet.svg");
+    }
+
+    &--food-exchange::before {
+      background-image: url("../img/index-icon-food-exchange-tablet.svg");
+    }
+
+    &--pet-changing::before {
+      background-image: url("../img/index-icon-pet-changing-tablet.svg");
+    }
+
+    &--healthy-food::after,
+    &--product-form::after,
+    &--food-exchange::after,
+    &--pet-changing::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      height: 280px;
+      background-repeat: no-repeat;
+    }
+
+    &--healthy-food::after {
+      right: 88px;
+      width: 112px;
+      background-image: url("../img/index-icon-one.svg");
+    }
+
+    &--product-form::after {
+      right: 68px;
+      width: 134px;
+      background-image: url("../img/index-icon-two.svg");
+    }
+
+    &--food-exchange::after {
+      right: 68px;
+      width: 134px;
+      background-image: url("../img/index-icon-three.svg");
+    }
+
+    &--pet-changing::after {
+      right: 64px;
+      width: 136px;
+      background-image: url("../img/index-icon-four.svg");
+    }
+  }
+
+  .advantages__item br {
+    display: block;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .advantages__item {
+    padding-right: 0;
+
+    &--healthy-food::after {
+      right: 8px;
+    }
+
+    &--product-form::after {
+      right: -11px;
+    }
+
+    &--food-exchange::after {
+      right: -12px;
+    }
+
+    &--pet-changing::after {
+      right: -15px;
+    }
   }
 }

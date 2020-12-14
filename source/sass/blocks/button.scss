@@ -1,13 +1,13 @@
 .button {
   display: block;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 13px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-align: center;
   text-decoration: none;
   font-family: $font-oswald;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-transform: uppercase;
   border: 0;
   color: $white;
@@ -23,6 +23,8 @@
   &--form {
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   &--catalog {

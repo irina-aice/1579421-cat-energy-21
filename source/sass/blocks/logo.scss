@@ -1,4 +1,87 @@
 .logo {
+  @include container;
+  position: relative;
   height: 66px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--footer {
+    padding-top: 56px;
+    padding-bottom: 43px;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .logo {
+    width: auto;
+    padding: 34px 0 0 0;
+    margin: 0;
+
+    &--footer {
+      justify-content: flex-start;
+      padding-top: 17px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo {
+    padding-top: 83px;
+
+    &--footer {
+      padding-top: 14px;
+    }
+  }
+}
+
+.logo__icon {
+  &--mobile {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  &--tablet,
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .logo__text {
+    display: none;
+  }
+
+  .logo__icon {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .logo__icon {
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
+  }
 }
