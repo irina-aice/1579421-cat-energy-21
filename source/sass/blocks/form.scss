@@ -105,6 +105,7 @@
 }
 
 .form__item {
+  position: relative;
   margin-bottom: 16px;
 
   &--grid {
@@ -120,6 +121,28 @@
 
   &--checkbox {
     margin-bottom: 8px;
+  }
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 14px;
+    top: 15px;
+    right: 15px;
+    background-image: url("../img/icon-email.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--phone::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    right: 13px;
+    background-image: url("../img/icon-phone.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -137,6 +160,20 @@
 
     &--checkbox {
       margin-bottom: 29px;
+    }
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .form__item {
+    &--email::after {
+      top: 15px;
+      right: 19px;
+    }
+
+    &--phone::after {
+      top: 12px;
+      right: 17px;
     }
   }
 }

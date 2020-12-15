@@ -3,7 +3,7 @@
 }
 
 .copyright__link {
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding-top: 22px;
   padding-bottom: 22px;
@@ -13,6 +13,7 @@
 
 @media (min-width: $width-tablet) {
   .copyright__link {
+    display: inline-flex;
     justify-content: flex-end;
   }
 }
