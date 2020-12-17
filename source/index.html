@@ -122,7 +122,7 @@
           </defs>
         </svg>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav main-nav--nojs">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -221,18 +221,34 @@
           </div>
         </div>
         <div class="result__wrapper-range">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 677w, img/cat-before-tablet@2x.png 2x">
-            <img class="result__image" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Фото полного кота до изменения питания">
-          </picture>
+          <div class="result__image-container">
+            <div class="result__image-wrapper js-image-before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-before-desktop.webp 1x, img/cat-before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile@2x.webp 2x">
+                <source media="(min-width: 1440px)" srcset="img/cat-before-desktop.png 1x, img/cat-before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet@2x.png 2x">
+                <img class="result__image result__image--before" src="img/cat-before-mobile.png" srcset="img/cat-before-mobile@2x.png 2x" alt="Фото полного кота до изменения питания">
+              </picture>
+            </div>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-after-desktop.webp 1x, img/cat-after-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/cat-after-desktop.png 1x, img/cat-after-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet@2x.png 2x">
+              <img class="result__image result__image--after" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile@2x.png 2x" alt="Фото худого кота после изменения питания питания">
+            </picture>
+          </div>
           <div class="range range__wrapper">
-            <button class="range__button range__button--left" type="submit">Было</button>
+            <button class="js-range-button-before range__button range__button--before" type="button">Было</button>
             <div class="range__container">
-              <div class="range__scale">
+              <div class="js-range-scale range__scale">
                 <div class="range__control"></div>
               </div>
             </div>
-            <button class="range__button range__button--right" type="submit">Стало</button>
+            <button class="js-range-button-after range__button range__button--after" type="button">Стало</button>
           </div>
         </div>
       </div>
@@ -309,5 +325,7 @@
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=c2b5160f-2f5f-4b10-80eb-75953bccd54f&lang=ru_RU"></script>
   <script src="js/map.js"></script>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/range.js"></script>
 </body>
 </html>

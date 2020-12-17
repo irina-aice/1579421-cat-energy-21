@@ -27,7 +27,7 @@
 
     &::before {
       z-index: -1;
-      top: 266px;
+      top: 258px;
       left: 29px;
       width: 709px;
       height: 609px;
@@ -44,7 +44,7 @@
 @media (min-width: $width-desktop) {
   .promo::before {
     z-index: 0;
-    top: 33px;
+    top: 26px;
     left: 558px;
     width: 552px;
     height: 499px;
@@ -120,7 +120,7 @@
 
 @media (min-width: $width-tablet) {
   .promo__title {
-    padding-top: 64px;
+    padding-top: 56px;
     padding-bottom: 42px;
     font-size: 60px;
     line-height: 1;
@@ -129,7 +129,7 @@
 
 @media (min-width: $width-desktop) {
   .promo__title {
-    padding-top: 115px;
+    padding-top: 107px;
     padding-bottom: 40px;
     font-size: 60px;
     line-height: 1;

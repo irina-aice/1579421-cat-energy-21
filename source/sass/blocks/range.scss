@@ -14,7 +14,7 @@
 .range__wrapper {
   @include container;
   padding-top: 29px;
-  padding-bottom: 34px;
+  padding-bottom: 36px;
 }
 
 @media (min-width: $width-tablet) {
@@ -25,8 +25,8 @@
 
 @media (min-width: $width-desktop) {
   .range__wrapper {
-    padding-top: 84px;
-    padding-left: 39px;
+    padding-top: 32px;
+    padding-left: 63px;
     padding-right: 0;
   }
 }
@@ -40,12 +40,12 @@
   border: 0;
   background-color: $lighter-grey;
 
-  &--left {
+  &--before {
     text-align: right;
     margin-right: 2px;
   }
 
-  &--right {
+  &--after {
     text-align: left;
     margin-left: 3px;
   }
@@ -114,8 +114,8 @@
     position: absolute;
     width: 34px;
     height: 34px;
-    left: 50%;
-    transform: translateY(-40%);
+    left: 47%;
+    transform: translateY(-43%);
     border: 1px solid $paler-grey;
     border-radius: 50%;
     box-sizing: border-box;
