@@ -1,8 +1,8 @@
-let imageBefore = document.querySelector('.js-image-before');
-let rangeScale = document.querySelector('.js-range-scale');
+let imageBefore = document.querySelector('.result__image-wrapper');
+let rangeScale = document.querySelector('.range__scale');
 
-let buttonBefore = document.querySelector('.js-range-button-before');
-let buttonAfter = document.querySelector('.js-range-button-after');
+let buttonBefore = document.querySelector('.range__button--before');
+let buttonAfter = document.querySelector('.range__button--after');
 
 buttonBefore.addEventListener('click', function () {
   imageBefore.style.width = '100%';
