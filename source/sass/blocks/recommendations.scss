@@ -117,7 +117,7 @@
 @media (min-width: $width-desktop) {
   .recommendations__title {
     text-align: center;
-    padding-bottom: 73px;
+    padding-bottom: 75px;
 
     &--fat::before {
       top: 41px;
@@ -159,7 +159,7 @@
 
 @media (min-width: $width-desktop) {
   .recommendations__description {
-    padding-bottom: 28px;
+    padding-bottom: 26px;
   }
 }
 
