@@ -30,7 +30,7 @@
 
 @media (min-width: $width-tablet) {
   .form__fieldset {
-    margin-top: 42px;
+    margin-top: 40px;
 
     &--bottom-border {
       border-bottom: 0;
@@ -78,6 +78,10 @@
   .form__fieldset--additional {
     margin-top: 57px;
   }
+
+  .form__fieldset--user-data {
+    margin-top: 77px;
+  }
 }
 
 .form__list {
@@ -110,7 +114,7 @@
 
   &--grid {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: max-content 1fr;
     grid-column-gap: 14px;
   }
 
@@ -122,28 +126,30 @@
   &--checkbox {
     margin-bottom: 8px;
   }
+}
 
-  &--email::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 14px;
+.form__icon {
+  position: absolute;
+
+  &--email {
     top: 15px;
     right: 15px;
-    background-image: url("../img/icon-email.svg");
-    background-repeat: no-repeat;
+    color: $darker-grey;
   }
 
-  &--phone::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
+  &--phone {
     top: 14px;
     right: 13px;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
+    color: $black;
   }
+}
+
+.form__input:focus + .form__icon {
+  color: $green;
+}
+
+.form__input--invalid + .form__icon {
+  color: $red;
 }
 
 @media (min-width: $width-tablet) {
@@ -205,10 +211,6 @@
   text-transform: uppercase;
   align-self: center;
 
-  &--position {
-    padding-right: 5px;
-  }
-
   &--radio {
     position: relative;
     display: block;
@@ -237,7 +239,7 @@
       padding-left: 48px;
     }
 
-    &--telephone {
+    &--phone {
       padding-bottom: 0;
     }
 
@@ -308,7 +310,7 @@
       padding-top: 12px;
     }
 
-    &--telephone {
+    &--phone {
       padding-left: 13px;
       padding-top: 15px;
     }
@@ -458,7 +460,7 @@
   }
 
   .form__title-wrapper--additional {
-    margin-top: 63px;
+    margin-top: 66px;
   }
 }
 
