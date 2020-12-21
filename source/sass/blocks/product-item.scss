@@ -4,7 +4,7 @@
 
   &--all {
     position: relative;
-    padding-bottom: 23px;
+    padding-bottom: 24px;
     border-bottom: 1px solid $pale-grey;
   }
 
@@ -26,6 +26,7 @@
     &--all {
       margin-top: 74px;
       padding-bottom: 0;
+      border-bottom: 0;
     }
 
     &--accessory {
@@ -43,6 +44,10 @@
     border-right: 0;
     padding-bottom: 10px;
   }
+
+  .product-item--all {
+    margin-top: 82px;
+  }
 }
 
 .product-item__title {
@@ -52,7 +57,7 @@
   text-transform: uppercase;
 
   &--all {
-    margin-top: 78px;
+    margin-top: 77px;
     text-align: center;
   }
 
@@ -69,7 +74,7 @@
   }
 
   &--accessory {
-    margin-top: 12px;
+    margin-top: 11px;
   }
 }
 
@@ -94,9 +99,17 @@
 }
 
 @media (min-width: $width-desktop) {
-  .product-item__title--accessory {
-    padding-top: 10px;
-    line-height: 22px;
+  .product-item__title {
+    line-height: 21px;
+
+    &--accessory {
+      padding-top: 10px;
+      line-height: 22px;
+    }
+
+    &--all::before {
+      top: 50px;
+    }
   }
 }
 
@@ -140,10 +153,6 @@
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-
-    &--small {
-      padding-bottom: 7px;
-    }
   }
 }
 
@@ -155,13 +164,13 @@
 
   &--accessory {
     padding-top: 11px;
-    padding-bottom: 12px;
+    padding-bottom: 13px;
   }
 }
 
 @media (min-width: $width-tablet) {
   .product-item__table {
-    padding-top: 14px;
+    padding-top: 13px;
     padding-bottom: 32px;
 
     &--accessory {
@@ -173,7 +182,7 @@
 
 @media (min-width: $width-desktop) {
   .product-item__table {
-    padding-top: 14px;
+    padding-top: 18px;
     padding-bottom: 33px;
 
     &--accessory {
@@ -184,7 +193,7 @@
 }
 
 .product-item__text {
-  margin: 8px 0 22px 0;
+  margin: 7px 0 22px 0;
   padding: 0;
   text-align: center;
   font-size: 12px;
@@ -196,6 +205,12 @@
     margin: 21px 0 87px 0;
     font-size: 16px;
     line-height: 18px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .product-item__text {
+    margin-top: 25px;
   }
 }
 
@@ -211,7 +226,7 @@
 
 .product-item__container--basic {
   @include container;
-  padding-top: 7px;
+  padding-top: 8px;
   padding-bottom: 24px;
 }
 
@@ -221,7 +236,7 @@
 
 @media (min-width: $width-tablet) {
   .product-item__container {
-    padding: 0 37px 39px 37px;
+    padding: 0 37px 40px 37px;
 
     &--basic {
       background: linear-gradient(to bottom, $white 0 73px, $light-grey 73px 100%);
@@ -229,7 +244,7 @@
 
     &--all {
       padding-top: 157px;
-      padding-bottom: 33px;
+      padding-bottom: 36px;
       border: 2px solid $light-grey;
     }
 
@@ -241,22 +256,29 @@
 }
 
 @media (min-width: $width-desktop) {
-  .product-item__container--all {
-    padding-bottom: 38px;
-  }
+  .product-item__container {
+    &--all {
+      padding-top: 158px;
+      padding-bottom: 38px;
+    }
 
-  .product-item__container--accessory {
-    display: grid;
-    grid-template-columns: 1fr 244px;
-    grid-column-gap: 37px;
-    padding: 14px 0 7px 0;
+    &--accessory {
+      display: grid;
+      grid-template-columns: 1fr 244px;
+      grid-column-gap: 37px;
+      padding: 14px 0 7px 0;
+    }
+
+    &--basic {
+      background: linear-gradient(to bottom, $white 0 79px, $light-grey 79px 100%);
+    }
   }
 }
 
 @media (min-width: $width-tablet) {
   .product-item__inner {
     &--basic {
-      margin-top: 26px;
+      margin-top: 34px;
     }
 
     &--accessory {
@@ -271,6 +293,9 @@
   .product-item__inner--accessory {
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 36px;
+  }
+  .product-item__inner--basic {
+    margin-top: 43px;
   }
 }
 

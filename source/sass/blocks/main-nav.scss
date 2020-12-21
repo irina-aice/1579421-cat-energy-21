@@ -60,24 +60,13 @@
 }
 
 .main-nav__item {
-  //border-top: 1px solid $palest-grey;
   border-bottom: 1px solid $palest-grey;
   box-sizing: border-box;
-
-  //&:last-child {
-  //  border-bottom: 1px solid $palest-grey;
-  //}
 }
 
 @media (min-width: $width-tablet) {
   .main-nav__item {
     border-bottom: 0;
-
-    //border-top: 0;
-
-    //&:last-child {
-    //  border-bottom: 0;
-    //}
   }
 }
 

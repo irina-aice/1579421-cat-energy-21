@@ -6,12 +6,13 @@
   position: relative;
   height: auto;
   margin-top: 39px;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   padding-top: 186px;
-  padding-bottom: 43px;
+  padding-bottom: 42px;
   background-image: url("../img/gift-photo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $green;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
@@ -21,9 +22,9 @@
 @media (min-width: $width-tablet) {
   .present__inner {
     margin-top: 68px;
-    margin-bottom: 77px;
-    padding-top: 75px;
-    padding-bottom: 66px;
+    margin-bottom: 76px;
+    padding-top: 72px;
+    padding-bottom: 68px;
     background-image: url("../img/gift-photo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -72,7 +73,7 @@
     margin-left: 423px;
 
     &::before {
-      top: 61px;
+      top: 58px;
       left: 79px;
       transform: none;
     }
@@ -83,5 +84,10 @@
   .present__description {
     text-align: center;
     margin-left: 0;
+
+    &::before {
+      top: 57px;
+      left: 85px;
+    }
   }
 }

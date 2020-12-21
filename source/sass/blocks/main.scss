@@ -1,7 +1,7 @@
 .main__title {
   @include container;
   margin-top: 27px;
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 1;
   color: $black;
@@ -9,8 +9,8 @@
 
 @media (min-width: $width-tablet) {
   .main__title {
-    margin-top: 65px;
-    margin-bottom: 93px;
+    margin-top: 58px;
+    margin-bottom: 91px;
     font-size: 60px;
     line-height: 1;
   }
@@ -18,7 +18,7 @@
 
 @media (min-width: $width-desktop) {
   .main__title {
-    margin-top: 80px;
-    margin-bottom: 83px;
+    margin-top: 73px;
+    margin-bottom: 85px;
   }
 }
