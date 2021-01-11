@@ -55,32 +55,46 @@
               <ul class="form__list">
                 <li class="form__item form__item--grid">
                   <label class="form__label" for="cat-name">Имя:*</label>
-                  <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+                  <input class="form__input form__input--pet-data" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
                 </li>
                 <li class="form__item form__item--grid">
                   <label class="form__label" for="cat-weight">Вес (кг):*</label>
-                  <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+                  <input class="form__input form__input--pet-data" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
                 </li>
                 <li class="form__item form__item--grid form__item--cat-years">
                   <label class="form__label" for="cat-years">Возраст (лет):</label>
-                  <input class="form__input" type="text" name="cat-years" id="cat-years" placeholder="7">
+                  <input class="form__input form__input--pet-data" type="text" name="cat-years" id="cat-years" placeholder="7">
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form__fieldset form__fieldset--bottom-border form__fieldset--end-result">
               <ul class="form__list form__list--radio">
                 <li class="form__item form__item--radio">
-                  <input class="form__input visually-hidden" type="radio" name="end-result" value="weight-loss" id="weight-loss" checked>
-                  <label class="form__label form__label--radio" for="weight-loss">Похудение</label>
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="end-result" value="weight-loss" id="weight-loss" checked>
+                  <label class="form__label form__label--radio" for="weight-loss">
+                    <span class="form__radio-icon-wrapper">
+                      <span class="form__radio-icon-checked"></span>
+                    </span>
+                    <span>Похудение</span>
+                  </label>
                 </li>
                 <li class="form__item form__item--radio">
-                  <input class="form__input visually-hidden" type="radio" name="end-result" value="weight-gain" id="weight-gain">
-                  <label class="form__label form__label--radio" for="weight-gain">Набор массы</label>
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="end-result" value="weight-gain" id="weight-gain">
+                  <label class="form__label form__label--radio" for="weight-gain">
+                    <span class="form__radio-icon-wrapper">
+                      <span class="form__radio-icon-checked"></span>
+                    </span>
+                    <span>Набор массы</span>
+                  </label>
                 </li>
                 <li class="form__item form__item--radio">
-                  <input class="form__input visually-hidden" type="radio" name="end-result" value="need-advice" id="need-advice">
-                  <label class="form__label form__label--radio" for="need-advice">Не знаю (нужен ваш
-                    совет)</label>
+                  <input class="form__input form__input--radio visually-hidden" type="radio" name="end-result" value="need-advice" id="need-advice">
+                  <label class="form__label form__label--radio" for="need-advice">
+                    <span class="form__radio-icon-wrapper">
+                      <span class="form__radio-icon-checked"></span>
+                    </span>
+                    <span>Не знаю (нужен ваш совет)</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -93,7 +107,7 @@
           <fieldset class="form__fieldset form__fieldset--user-data">
             <ul class="form__list form__list--user-data">
               <li class="form__item form__item--grid">
-                <label class="form__label form__label--user-data" for="email">E&#8209mail:*</label>
+                <label class="form__label form__label--user-data" for="email">E&#8209;mail:*</label>
                 <input class="form__input form__input--user-data form__input--email" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="form__icon form__icon--email" width="20" height="15" stroke="currentColor" fill="none">
                   <use xlink:href="img/sprite.svg#icon-email"></use>
@@ -115,7 +129,7 @@
           </div>
           <div class="form__fieldset form__fieldset--comment">
             <label class="visually-hidden" for="comment-field">Повадки кота</label>
-            <textarea class="form__input form__input--comment" name="comment" id="comment-field" rows="6" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form__input form__input--comment" name="comment" id="comment-field" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
           <div class="form__title-wrapper form__title-wrapper--additional">
             <div class="form__title title">
