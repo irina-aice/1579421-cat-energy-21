@@ -87,6 +87,7 @@
 
 .address__map {
   height: 362px;
+  max-width: 767px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +100,7 @@
 @media (min-width: $width-tablet) {
   .address__map {
     height: 400px;
+    max-width: 1439px;
     background-image: url("../img/map-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
